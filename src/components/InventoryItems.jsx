@@ -5,7 +5,7 @@ export default function InventoryItems({ item, onEdit, onDelete, onIncrease, onD
   const navigate = useNavigate();
   const imageSrc =
     item.photos.length > 0
-      ? `http://165.227.123.35:3000${item.photos[0].filePath}`
+      ? `https://inventorymanagement-xkjy.onrender.com${item.photos[0].filePath}`
       : "/No-Image-Placeholder.svg";
 
   console.log(`Image source for item ${item._id}:`, imageSrc);

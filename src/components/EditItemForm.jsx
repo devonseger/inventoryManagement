@@ -150,7 +150,7 @@ export default function EditItemForm({ item, handleChange, handleFileChange, upl
                     <div key={index} className="relative">
                       <img
                         crossOrigin="anonymous"
-                        src={`http://165.227.123.35:3000${photo.filePath}`}
+                        src={`https://inventorymanagement-xkjy.onrender.com${photo.filePath}`}
                         alt={`Existing ${index + 1}`}
                         className="h-20 w-20 rounded object-cover"
                       />
@@ -172,7 +172,7 @@ export default function EditItemForm({ item, handleChange, handleFileChange, upl
                     <div key={index} className="relative">
                       <img
                         crossOrigin="anonymous"
-                        src={`http://165.227.123.35:3000${image.filePath}`}
+                        src={`https://inventorymanagement-xkjy.onrender.com${image.filePath}`}
                         alt={`Uploaded ${index + 1}`}
                         className="h-20 w-20 rounded object-cover"
                       />

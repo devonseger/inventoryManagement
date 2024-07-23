@@ -38,7 +38,7 @@ export default function InventoryForm({ currentItem, onAdd, onUpdate }) {
   useEffect(() => {
     const fetchOptions = async () => {
       try {
-        const response = await axios.get('http://165.227.123.35:3000/api/options');
+        const response = await axios.get('https://inventorymanagement-xkjy.onrender.com/api/options');
         console.log('API response:', response.data); // Log API response
         const optionsData = response.data.reduce((acc, option) => {
           acc[option.type] = option.values || [];
@@ -90,7 +90,7 @@ export default function InventoryForm({ currentItem, onAdd, onUpdate }) {
   const addNewOption = async (type) => {
     if (newOption[type].trim() !== '') {
       try {
-        await axios.post('http://165.227.123.35:3000/api/options', {
+        await axios.post('https://inventorymanagement-xkjy.onrender.com/api/options', {
           type,
           value: newOption[type]
         });
