@@ -27,7 +27,7 @@ export default function Registration() {
     validationSchema: userSchema,
     onSubmit: async (values) => {
       try {
-        const response = await axios.post('https://inventorymanagement-xkjy.onrender.com/auth/register', values);
+        const response = await axios.post('https://inventorymanagement-api-u16f.onrender.com/auth/register', values);
         alert(response.data.message);
       } catch (error) {
         alert(error.response.data.message);

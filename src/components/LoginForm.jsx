@@ -9,7 +9,7 @@ export default function LoginForm() {
       const password = event.target.password.value;
   
       try {
-        const response = await axios.post('https://inventorymanagement-xkjy.onrender.com/auth/login', { email, password });
+        const response = await axios.post('https://inventorymanagement-api-u16f.onrender.com/auth/login', { email, password });
         console.log('Login response:', response); // Debugging statement
         // Assuming the JWT token is returned in the response data
         const token = response.data.token;

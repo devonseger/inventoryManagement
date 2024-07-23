@@ -59,7 +59,7 @@ const EditItem = () => {
     console.log('Sending itemId:', id); // Log for debugging
 
     try {
-      const response = await fetch(`https://inventorymanagement-xkjy.onrender.com/upload/${id}`, {
+      const response = await fetch(`https://inventorymanagement-api-u16f.onrender.com/upload/${id}`, {
         method: 'POST',
         body: formData,
       });
