@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://165.227.123.35:3000";
+const API_URL = "https://inventoryManagement-api.onrender.com";
 
 const api = axios.create({
   baseURL: API_URL,
