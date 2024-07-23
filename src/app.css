@@ -1,0 +1,21 @@
+/* App.css */
+@keyframes scrollBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 -100%;
+    }
+  }
+  
+  .scroll-bg {
+    background-image: url('/carl-raw-o59Gt5O4QZ4-unsplash.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    animation: scrollBackground 60s linear infinite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
